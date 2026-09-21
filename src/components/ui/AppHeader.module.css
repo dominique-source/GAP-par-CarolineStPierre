@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: var(--gap-night);
+  color: var(--gap-white);
+  border-bottom: 1px solid rgba(244, 247, 255, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gap-mint);
+  color: var(--gap-mint);
+  display: grid;
+  place-items: center;
+  font-family: var(--gap-font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.gmfName {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.gapLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gap-slate);
+  letter-spacing: 0.04em;
+}
+
+.periode {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--gap-white);
+}

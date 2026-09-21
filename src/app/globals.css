@@ -1,0 +1,69 @@
+:root {
+  --gap-night: #080e22;
+  --gap-night-2: #0e1530;
+  --gap-night-3: #141b3a;
+  --gap-cobalt: #354bff;
+  --gap-mint: #c7ffd8;
+  --gap-coral: #ff654d;
+  --gap-white: #f4f7ff;
+  --gap-slate: #7f8ba3;
+  --gap-positive: #39c88a;
+  --gap-amber: #f1af3b;
+
+  --gap-track-dark: rgba(244, 247, 255, 0.12);
+  --gap-track-light: #e3e8f7;
+
+  --gap-font-sans: var(--font-inter), "Segoe UI", system-ui, sans-serif;
+  --gap-font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+
+  --gap-radius: 20px;
+  --gap-radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--gap-font-sans);
+  color: var(--gap-white);
+  background: var(--gap-night);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--gap-mint);
+  outline-offset: 2px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

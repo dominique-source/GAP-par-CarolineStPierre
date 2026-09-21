@@ -1,0 +1,77 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 14, 34, 0.72);
+  display: grid;
+  place-items: center;
+  z-index: 50;
+  padding: 24px;
+}
+
+.panel {
+  background: var(--gap-white);
+  color: var(--gap-night);
+  border-radius: var(--gap-radius);
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.periode {
+  font-size: 0.85rem;
+  color: var(--gap-slate);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--gap-track-light);
+}
+
+.rowLabel {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gap-slate);
+}
+
+.rowValue {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.statut {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: var(--gap-radius-sm);
+  background: rgba(57, 200, 138, 0.12);
+  color: #1f7a56;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.statutASuivre {
+  background: rgba(255, 101, 77, 0.12);
+  color: #b8402c;
+}
+
+.close {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 48px;
+  border-radius: 999px;
+  border: 1.5px solid var(--gap-night);
+  background: transparent;
+  font-weight: 800;
+  cursor: pointer;
+}

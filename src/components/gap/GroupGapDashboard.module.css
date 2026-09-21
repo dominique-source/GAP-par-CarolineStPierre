@@ -1,0 +1,89 @@
+.screen {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--gap-night);
+  color: var(--gap-white);
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(200px, 240px) minmax(400px, 1.15fr);
+  gap: clamp(20px, 3vw, 40px);
+  padding: clamp(20px, 3vh, 40px) clamp(24px, 4vw, 48px) 0;
+  align-items: start;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gap-cobalt);
+  margin-bottom: clamp(8px, 2vh, 20px);
+}
+
+.plagesCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.plagesValue {
+  font-size: clamp(3.2rem, 6.5vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--gap-mint);
+}
+
+.plagesLabel {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.plagesFraction {
+  font-size: 0.9rem;
+  color: var(--gap-slate);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.ringWrap {
+  margin-top: clamp(16px, 3vh, 36px);
+}
+
+.portraitCol {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.footer {
+  padding: 16px clamp(24px, 4vw, 48px) 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slogan {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gap-slate);
+}
+
+.signature {
+  font-size: 0.75rem;
+  color: var(--gap-slate);
+  font-weight: 500;
+}
+
+.actionRow {
+  margin-top: 18px;
+}

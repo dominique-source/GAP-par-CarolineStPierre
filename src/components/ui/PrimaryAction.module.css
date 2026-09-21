@@ -1,0 +1,26 @@
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: var(--gap-mint);
+  color: var(--gap-night);
+}
+
+.action:hover {
+  filter: brightness(1.05);
+}
+
+.actionDark {
+  background: var(--gap-night);
+  color: var(--gap-mint);
+}

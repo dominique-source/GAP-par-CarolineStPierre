@@ -1,0 +1,185 @@
+.screen {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--gap-white);
+  color: var(--gap-night);
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(300px, 1fr) minmax(280px, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: clamp(16px, 2.5vw, 32px);
+  padding: clamp(20px, 3vh, 40px) clamp(24px, 4vw, 48px);
+}
+
+.portraitFrame {
+  position: relative;
+  border-radius: var(--gap-radius);
+  overflow: hidden;
+  background: var(--gap-night-3);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.portraitBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gap-mint);
+}
+
+.ringCell {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmfCard {
+  grid-column: 3;
+  grid-row: 1;
+  background: var(--gap-cobalt);
+  color: var(--gap-white);
+  border-radius: var(--gap-radius);
+  padding: clamp(16px, 3vh, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.gmfEyebrow {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.gmfBody {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.gmfMetrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.gmfMetricLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.gmfMetricValue {
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 800;
+  margin-top: 2px;
+}
+
+.gmfBar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(244, 247, 255, 0.25);
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.gmfBarFill {
+  height: 100%;
+  background: var(--gap-mint);
+  border-radius: 999px;
+}
+
+.nameCell {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.name {
+  font-family: var(--gap-font-serif);
+  font-style: italic;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.role {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gap-slate);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.todoCell {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  background: var(--gap-night);
+  color: var(--gap-white);
+  border-radius: var(--gap-radius);
+  padding: clamp(16px, 2.5vh, 28px) clamp(20px, 3vw, 32px);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+}
+
+.todoEyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gap-coral);
+  grid-column: 1 / -1;
+}
+
+.todoNumber {
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.todoText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.todoLabel {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.todoNote {
+  font-size: 0.9rem;
+  color: var(--gap-slate);
+  font-weight: 500;
+}
+
+.gapLink {
+  font-size: 0.8rem;
+  color: var(--gap-slate);
+  font-weight: 600;
+}
